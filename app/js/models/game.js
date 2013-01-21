@@ -12,13 +12,7 @@ define([
 
 		//Some default variables
 		defaults: {
-			w: window.innerWidth,
-			h: window.innerHeight,
 			sounds: {}
-		},
-
-		log: function() {
-			if(DEBUG) console.log.apply(console, arguments);
 		},
 
 		initialize: function(settings) {
