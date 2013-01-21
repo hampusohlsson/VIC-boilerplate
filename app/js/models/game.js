@@ -30,7 +30,7 @@ define([
 			Backbone.bind('game:ready', this.start, this);
 
 			//Init sounds
-			this.addSound('bg', 'sounds/test.mp3', true);
+			this.addSound('foo', 'sounds/test.mp3', false);
 
 			//Do other stuff...
 
@@ -45,6 +45,7 @@ define([
 		start: function() {
 			console.log('[GAME] start');
 			//Start game here
+			this.playSound('foo');
 		},
 
 		addSound: function(name, src, loop) {

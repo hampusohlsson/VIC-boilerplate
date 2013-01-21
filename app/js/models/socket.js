@@ -16,7 +16,7 @@ define([
 			//Alias for function object ('this' can get dereferenced)
 			self = this;
 
-			console.log('[NETWORK] Connecting TUIO...');
+			console.log('[NETWORK] Connecting TUIO... (3 sec delay)');
 
 			//TCP socket for Tuio commands, port as specified in server.js
 			var tuio = new Tuio.Client({ host: "http://127.0.0.1:8080" });
@@ -26,7 +26,13 @@ define([
 			tuio.on("addTuioCursor", this.onAddTuioCursor);
 			
 			//Connect Tuio
-			tuio.connect();
+			//tuio.connect();
+			
+			//ATTENTION
+			//Timeout should be removed!!! only for demo purpose
+			setTimeout(function() {
+				tuio.connect();
+			}, 3000);
 			
 			/*
 			All TUIO events

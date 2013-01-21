@@ -18,6 +18,7 @@ define([
 		},
 
 		render: function() {
+			this.$el.removeClass('loading');
 			this.setTitle('Waiting for connection');
 		},
 
@@ -31,7 +32,6 @@ define([
 			var settings = {}
 			Backbone.app.game = new Game(settings);
 			this.setTitle('Game started');
-			this.$el.removeClass('loading');
 		},
 
 	});
