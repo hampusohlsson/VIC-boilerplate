@@ -23,3 +23,6 @@ You need to have Node.js installed to be able to run the server.
 * JSON parsing: [json2.js](https://github.com/douglascrockford/JSON-js)
 
 
+## Demo project
+See [DT2140-project](https://github.com/hampusohlsson/DT2140-project)
+
