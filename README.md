@@ -10,6 +10,8 @@ You need to have Node.js installed to be able to run the server.
 2. Open a web browser, preferrably Chrome, and navigate to ```http://localhost:8000``` (or the port specified in server.js)
 3. Enjoy your game
 
+Tip: Use the Chrome Web Inspector to see console output.
+
 ## JS libraries
 * File dependencies: [RequireJS](http://www.requirejs.org)
 * Structure: [Backbone.js](http://backbonejs.org/)
