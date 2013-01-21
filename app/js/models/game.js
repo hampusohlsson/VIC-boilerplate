@@ -30,7 +30,7 @@ define([
 			Backbone.bind('game:ready', this.start, this);
 
 			//Init sounds
-			this.addSound('bg', 'sounds/bg.mp3', true);
+			this.addSound('bg', 'sounds/test.mp3', true);
 
 			//Do other stuff...
 
